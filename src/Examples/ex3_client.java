@@ -18,6 +18,15 @@ public class ex3_client {
 
     }
 
+    public ex3_client(String n, String a, int l, boolean d, double f){
+        name= n;
+        address = a;
+        lawnSize =l;
+        hasDog=d;
+        outstandingFees= f;
+
+    }
+
     public String toString() {
         return name + "  " + address + "  " + lawnSize + "  " + hasDog + "  " + outstandingFees;
 
@@ -67,4 +76,12 @@ public class ex3_client {
             hasDog = false;
         }
     }//delinquent
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getLawnSize() {
+        return lawnSize;
+    }
 }

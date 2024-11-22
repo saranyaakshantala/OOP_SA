@@ -1,11 +1,14 @@
 package Examples;
 import java.util.ArrayList;
+import java.io.*;
 
 public class Ex3_lawnMain {
 
     public static void run(){
 
         ArrayList<ex3_client> allClients = new ArrayList<>();
+
+         //loadFile("data/ClientData.csv");
 
         allClients.add(new ex3_client("McDavid", "100 Maple Dr", 1000, true));
         allClients.add(new ex3_client("Luigi", "101 Maple Dr", 200, false));
@@ -82,5 +85,28 @@ System.out.println("Welcome to Moe's Mowing");
         }
         return -1;
     }
+
+
+    public static void loadFile(String filename, ArrayList<ex3_client> list ) {
+
+        try {
+            BufferedReader file = new BufferedReader(new FileReader(filename));
+
+            String dataToRead;
+            while( file.ready()){
+                dataToRead = file.readLine();
+
+                String tempArray[] = dataToRead.split(",");
+
+                list.add( new ex3_client(  tempArray[0],tempArray[1], Integer.parseInt(tempArray[4]),Boolean.parseBoolean(tempArray[5]), Double.parseDouble(tempArray[2])   ));
+
+            }
+        }
+        catch (IOException e) {
+            System.out.println(e);
+        }
+    }//end loadFile
+
+
 
 }

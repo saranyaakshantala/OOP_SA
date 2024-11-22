@@ -26,5 +26,11 @@ public class as1_crop {
         this.acres = acres;
     }
 
+    public void printMe(){
+        System.out.println("crop: " + name + ", " + "yield: " + yield + units + ", " + "acres: " + acres + ", " + "price: $" + price);
+    }
 
+    public String getName() {
+        return name;
+    }
 }
