@@ -38,6 +38,8 @@ public class as1_main {
         };
 
 
+        double totalRevenue = 0;
+
 
         while (true) {
             System.out.println();
@@ -75,6 +77,8 @@ public class as1_main {
 
                 if(harvest.equalsIgnoreCase("yes")){
 
+                    allCrops.get(foundCrop).harvest();
+
                 }else if(harvest.equalsIgnoreCase("no")){
                     System.out.println("ugh lame");
                 }else{
@@ -84,6 +88,7 @@ public class as1_main {
             } else if (choice == 3) {
 
                 System.out.println("Not Yet Implemented");
+
 
             } else if (choice == 4) {
 

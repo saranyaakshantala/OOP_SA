@@ -33,4 +33,15 @@ public class as1_crop {
     public String getName() {
         return name;
     }
-}
+
+    public double harvest(){
+        double hAmount = price * yield * acres;
+
+        System.out.println("Harvest value: $" + hAmount);
+
+        acres = 0;
+
+        return hAmount;
+    }
+    }
+
