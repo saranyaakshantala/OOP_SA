@@ -1,8 +1,6 @@
 package as1_crops;
 
 
-import Examples.ex3_client;
-
 import java.util.ArrayList;
 
 public class as1_main {
@@ -39,7 +37,6 @@ public class as1_main {
 
 
         double totalRevenue = 0;
-
 
         while (true) {
             System.out.println();

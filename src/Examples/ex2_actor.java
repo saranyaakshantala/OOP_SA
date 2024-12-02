@@ -24,9 +24,7 @@ public class ex2_actor {
         return name + ", " + role + ", " + sales + ", " + isPro;
     }//toString
 
-    public void printMe(){
-        System.out.println(name + ", " + role + "\n Ticket Sales: $  " + sales + ", " + isPro);
-    }
+
 
     public void sellTix(int n){
         sales += n;
