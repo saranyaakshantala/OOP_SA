@@ -26,6 +26,10 @@ public class as1_crop {
         this.acres = acres;
     }
 
+    public void addAcres(int additionalAcres) {
+        this.acres += additionalAcres;
+    }
+
     public void printMe(){
         System.out.println("crop: " + name + ", " + "yield: " + yield + units + ", " + "acres: " + acres + ", " + "price: $" + price);
     }
@@ -43,5 +47,4 @@ public class as1_crop {
 
         return hAmount;
     }
-    }
-
+}
